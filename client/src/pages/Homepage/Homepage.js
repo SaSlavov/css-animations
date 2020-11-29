@@ -1,5 +1,6 @@
 import React from 'react';
 import HeadphonesCard from '../../components/HeadphonesCard/HeadphonesCard';
+import RedWhiteCard from '../../components/RedWhiteCard/RedWhiteCard';
 import StackedCards from '../../components/StackedCards/StackedCards';
 import './Homepage.css'
 
@@ -9,6 +10,7 @@ const Homepage = () => {
         <div id="home-container">
             <HeadphonesCard />
             <StackedCards />
+            <RedWhiteCard />
         </div>
     );
 };
