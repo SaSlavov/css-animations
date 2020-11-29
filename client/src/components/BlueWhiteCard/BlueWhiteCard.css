@@ -1,0 +1,99 @@
+#blue-white-container {
+    position: absolute;
+    top: 60%;
+    left: 40%;
+    width: 400px;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    transition: 0.5s;
+    transform: skewY(-10deg);
+}
+
+#blue-white-container .blue-white-card{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background: #fff;
+    transition: 0.5s;
+}
+
+/* top part of card*/
+#blue-white-container .blue-white-card:before{
+    content: '';
+    position: absolute;
+    top: -15px;
+    left: 0;
+    width: 100%;
+    height: 15px;
+    background: #00c0f6;
+    transform-origin: bottom; /* bottom so it doesn't move right from the skew */
+    transform: skewX(45deg);
+    transition: 0.5s
+}
+
+#blue-white-container .blue-white-card:after{
+    content: '';
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    width: 15px;
+    height: 50%;
+    background: #00c0f6;
+    transform-origin: left; /* left so it doesn't move up from the skew */
+    transform: skewY(45deg);
+    transition: 0.5s;
+    border-bottom: 200px solid #d9d9d9
+}
+
+#blue-white-container .blue-white-card:hover{
+    transform: translateY(-40px)
+}
+
+#blue-white-container .blue-white-card .imageBx{
+    position: relative;
+    width: 300px;
+    height: 200px;
+    background: #00c7ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#blue-white-container .blue-white-card .imageBx h3 {
+    position: relative;
+    color: #fff;
+    margin-top: 10px;
+}
+
+#blue-white-container .blue-white-card .content {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    padding: 20px;
+    color: #777;
+    text-align: center;
+    background: #fff;
+}
+
+#blue-white-container .blue-white-card .content:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.8)); /* more transparent, more gradual the shadow */
+    transform-origin: bottom;
+    transform: skewX(45deg);
+    transition: 0.5s;
+    pointer-events: none; /* so it doesn't trigger the hover when i hover above the shadow */
+    z-index: -1;
+}
+
+#blue-white-container .blue-white-card:hover .content::before {
+    transform: translateY(40px) skewX(45deg); /* order is very important apparently  */
+    filter: blur(5px);
+    opacity: 0.5;
+}
