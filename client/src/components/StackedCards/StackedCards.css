@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#stacked-cards-container {
+    position: absolute;
+    top: 5%;
+    left: 45%;
+    width: 600px;
+    height: 400px;
+}
+
+#stacked-cards-container .stacked-card {
+    position: absolute;
+    top: calc(50% - 150px); 
+    left: 50%;
+    transform: translate(-50%, calc(100px * var(--i))) rotate(40deg) skew(-20deg, -10deg); /* stacks the cards */
+    width: 250px;
+    height: 350px;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 25px 25px 100px rgba(0, 0, 0, 0.2);
+    z-index: calc(-1 * var(--i));
+    transition: 0.5s
+}
+
+#stacked-cards-container .stacked-card:nth-child(1) {
+    opacity: 1;
+}    
+#stacked-cards-container .stacked-card:nth-child(2) {
+    opacity: 0.8;
+}    
+
+#stacked-cards-container:hover .stacked-card {
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    z-index: 1;
+    opacity: 1;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
+    transform: translate(calc(-50% + calc(300px * var(--i))), -50%) rotate(0deg) skew(0deg, 0deg); /* unstacks cards */
+
+}
+
+  
+
+#stacked-cards-container .stacked-card .stacked-card-content {
+    color: #444;
+    opacity: 0;
+    transition: 0.5s;
+    transform: translateY(50px); 
+    padding: 25px;
+    text-align: center;
+}
+
+/* content flies in card */
+#stacked-cards-container:hover .stacked-card .stacked-card-content {
+    opacity: 1;
+    transform: translateY(0px);
+    transition-delay: calc(0.2s * var(--j));
+}
