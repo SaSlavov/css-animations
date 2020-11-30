@@ -1,0 +1,74 @@
+.flip-card-3d {
+    position: absolute;
+    top: 60%;
+    right: 5%;
+    width: 320px;
+    height: 320px;
+    margin: 20px;
+    transform-style: preserve-3d; /* indicates that the elements children should be positioned in the 3D space*/
+    perspective: 1000px; /* the lower the value the closer to tha viewer*/
+}
+
+.flip-card-3d .flip-card-box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: 1s ease;
+}
+/* flip the card */
+.flip-card-3d:hover .flip-card-box{
+    transform: rotateY(180deg)
+}
+
+.flip-card-3d .flip-card-box .flip-card-imageBox{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.flip-card-3d .flip-card-box .flip-card-imageBox img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* used to specify how and <img> or <video> should be resized to fit their container */
+}
+
+.flip-card-3d .flip-card-box .flip-card-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #333;
+    backface-visibility: hidden; /* the backside of the content to not be visible when flipped. Not needed here i think but just fyi*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    transform: rotateY(180deg);
+}
+
+.flip-card-3d .flip-card-box .flip-card-content div {
+    transform-style: preserve-3d;
+    padding: 20px;
+    background: linear-gradient(45deg, #fe0061, #ffeb3b);
+    transform: translateZ(100px)
+}
+
+.flip-card-3d .flip-card-box .flip-card-content div h2 {
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.flip-card-3d .flip-card-box .flip-card-content div p {
+    color: #fff;
+    font-size: 16px;
+}
