@@ -1,21 +1,26 @@
 import React from 'react';
-import BlueWhiteCard from '../../components/BlueWhiteCard/BlueWhiteCard';
-import FlipCard3D from '../../components/FlipCard3D/FlipCard3D';
-import HeadphonesCard from '../../components/HeadphonesCard/HeadphonesCard';
-import RedWhiteCard from '../../components/RedWhiteCard/RedWhiteCard';
-import StackedCards from '../../components/StackedCards/StackedCards';
 import './Homepage.css'
+import HeadphonesCard from '../../components/Cards/HeadphonesCard/HeadphonesCard.js'
+import StackedCards from '../../components/Cards/StackedCards/StackedCards.js'
+import RedWhiteCard from '../../components/Cards/RedWhiteCard/RedWhiteCard.js'
+import BlueWhiteCard from '../../components/Cards/BlueWhiteCard/BlueWhiteCard.js'
+import FlipCard3D from '../../components/Cards/FlipCard3D/FlipCard3D.js'
+import FloatingInput from '../../components/Forms/FloatingInput/FloatingInput';
 
 const Homepage = () => {
 
     return (
         <div id="home-container">
-            <HeadphonesCard />
-            <StackedCards />
-            <RedWhiteCard />
-            <BlueWhiteCard />
-            <FlipCard3D />
-            
+            {/* <div className="cards">
+                <HeadphonesCard />
+                <StackedCards />
+                <RedWhiteCard />
+                <BlueWhiteCard />
+                <FlipCard3D />
+            </div> */}
+            <div>
+                <FloatingInput />
+            </div>
         </div>
     );
 };

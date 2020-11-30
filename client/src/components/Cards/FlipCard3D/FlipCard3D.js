@@ -1,6 +1,6 @@
 import React from 'react';
 import './FlipCard3D.css'
-import flower from '../../images/pexels-kevin-christian-5675085.jpg'
+import flower from '../../../images/pexels-kevin-christian-5675085.jpg'
 
 const FlipCard3D = () => {
     return (

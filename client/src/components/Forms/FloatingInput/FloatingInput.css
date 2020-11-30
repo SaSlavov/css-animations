@@ -1,0 +1,82 @@
+.floating-input-container {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    padding: 70px 40px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+}
+
+.floating-input-container h2 {
+    color: #111;
+    margin-bottom: 45px;
+    line-height: 1em;
+    font-weight: 500;
+    padding-left: 10px;
+    border-left: 5px solid #e91e63;
+    text-align: left;
+}
+
+.floating-input-container .floating-input-inputBox {
+    position: relative;
+    width: 300px;
+    height: 46px;
+    margin-bottom: 35px;
+}
+
+.floating-input-container .floating-input-inputBox:last-child {
+    margin-bottom: 0;
+}
+
+.floating-input-container .floating-input-inputBox input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border: 1px solid #111;
+    background: transparent;
+    padding: 10px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    outline: none; /* no bold black border around the input when focused */
+    font-size: 16px;
+    color: #111;
+    font-weight: 300;
+}
+
+.floating-input-container .floating-input-inputBox span{
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    padding: 10px;
+    display: inline-block;
+    font-size: 16px;
+    color: #111;
+    font-weight: 300;
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+.floating-input-container .floating-input-inputBox input:focus ~ span, /* select all spans that are preceded by an input */
+.floating-input-container .floating-input-inputBox input:valid ~ span {
+    transform: translateX(-10px) translateY(-32px);
+    font-size: 12px;
+}
+
+.floating-input-container .floating-input-inputBox input[type="submit"] { /* select all input with attribute type and value submit */
+    background: #2196f3;
+    color: #fff;
+    border: none;
+    max-width: 120px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.floating-input-container .floating-input-inputBox input[type="submit"]:hover {
+    background: #e91e63;
+}
+
+
+
+

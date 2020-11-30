@@ -1,6 +1,6 @@
 import React from 'react';
 import './HeadphonesCard.css'
-import headphones from '../../images/headphones.png'
+import headphones from '../../../images/headphones.png'
 
 const HeadphonesCard = () => {
     return (
