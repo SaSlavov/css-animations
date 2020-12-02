@@ -8,6 +8,7 @@ import FlipCard3D from '../../components/Cards/FlipCard3D/FlipCard3D.js'
 import FloatingInput from '../../components/Forms/FloatingInput/FloatingInput';
 import FoldedSignForm from '../../components/Forms/FoldedSignForm/FoldedSignForm';
 import GlowingForm from '../../components/Forms/GlowingForm/GlowingForm';
+import SnakeBorder from '../../components/Buttons/SnakeBorder/SnakeBorder';
 
 const Homepage = () => {
 
@@ -20,10 +21,13 @@ const Homepage = () => {
                 <BlueWhiteCard />
                 <FlipCard3D />
             </div> */}
-            <div>
+            {/* <div id="forms-container">
                 <FloatingInput />
                 <FoldedSignForm />
                 <GlowingForm />
+            </div> */}
+            <div>
+                <SnakeBorder />
             </div>
         </div>
     );
