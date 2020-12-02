@@ -1,0 +1,69 @@
+.flip-3d-button {
+    position: absolute;
+    top: 5%;
+    right: 3%;
+    /* transform: translate(-50%, -50%); */
+    width: 200px;
+    height: 60px;
+    text-align: center;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    transform-origin: center center;
+}
+
+.flip-3d-button span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    text-align: center;
+    line-height: 60px;
+    font-size: 24px;
+    background: rgba(255, 255, 255, 0.05);
+    transform-style: preserve-3d;
+    border-radius: 30px;
+    text-transform: uppercase;
+    color: #fff;
+    transition: 1s;
+}
+.flip-3d-button .front {
+    transform: rotateX(0deg) translateZ(20px)
+}
+
+.flip-3d-button:hover .front {
+    transform: rotateX(-180deg) translateZ(20px)
+}
+
+.flip-3d-button .back {
+    transform: rotateX(180deg) translateZ(20px)
+}
+
+.flip-3d-button:hover .back {
+    transform: rotateX(0deg) translateZ(20px)
+}
+
+.flip-3d-button .center {
+    background: linear-gradient(to left, #c31a5b, #7129bd);
+}
+
+.flip-3d-button .center:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to left, #ffdd1f, #c31a5b );
+    border-radius: 30px;
+    transform: translateZ(-1px) /* to separate it from the core so it will be visible */
+}
+
+.flip-3d-button:hover .center {
+    transform: rotateX(-180deg) translateZ(1px)
+}
+
+/* .flip-3d-button:hover .center {
+    transform: rotateX(-180deg) translateZ(20px)
+} */

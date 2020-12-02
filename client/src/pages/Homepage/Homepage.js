@@ -10,6 +10,7 @@ import FoldedSignForm from '../../components/Forms/FoldedSignForm/FoldedSignForm
 import GlowingForm from '../../components/Forms/GlowingForm/GlowingForm';
 import SnakeBorder from '../../components/Buttons/SnakeBorder/SnakeBorder';
 import LiquidButton from '../../components/Buttons/LiquidButton/LiquidButton';
+import Flip3DButton from '../../components/Buttons/Flip3DButton/Flip3DButton';
 
 const Homepage = () => {
 
@@ -30,6 +31,7 @@ const Homepage = () => {
             <div>
                 <SnakeBorder />
                 <LiquidButton />
+                <Flip3DButton />
             </div>
         </div>
     );
