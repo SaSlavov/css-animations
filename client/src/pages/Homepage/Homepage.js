@@ -9,6 +9,7 @@ import FloatingInput from '../../components/Forms/FloatingInput/FloatingInput';
 import FoldedSignForm from '../../components/Forms/FoldedSignForm/FoldedSignForm';
 import GlowingForm from '../../components/Forms/GlowingForm/GlowingForm';
 import SnakeBorder from '../../components/Buttons/SnakeBorder/SnakeBorder';
+import LiquidButton from '../../components/Buttons/LiquidButton/LiquidButton';
 
 const Homepage = () => {
 
@@ -28,6 +29,7 @@ const Homepage = () => {
             </div> */}
             <div>
                 <SnakeBorder />
+                <LiquidButton />
             </div>
         </div>
     );

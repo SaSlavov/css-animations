@@ -4,7 +4,7 @@ import './SnakeBorder.css'
 const SnakeBorder = () => {
     return (
         <div>
-            <a href="#">
+            <a className="snake-border-a" href="#">
                 <span></span>
                 <span></span>
                 <span></span>

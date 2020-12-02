@@ -1,4 +1,4 @@
-a {
+.snake-border-a {
     position: absolute;
     top: 5%;
     left:5%;
@@ -13,7 +13,7 @@ a {
     overflow: hidden;
 }
 
-a:before {
+.snake-border-a:before {
     content: '';
     position: absolute;
     top: 2px;
@@ -23,7 +23,7 @@ a:before {
     background:  rgba(255, 255, 255, 0.05);
 }
 
-a span:nth-child(1) {
+.snake-border-a span:nth-child(1) {
     position: absolute;
     top: 0;
     left: 0;
@@ -42,7 +42,7 @@ a span:nth-child(1) {
     }
 }
 
-a span:nth-child(2) {
+.snake-border-a span:nth-child(2) {
     position: absolute;
     top: 0;
     right: 0;
@@ -62,7 +62,7 @@ a span:nth-child(2) {
     }
 }
 
-a span:nth-child(3) {
+.snake-border-a span:nth-child(3) {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -81,7 +81,7 @@ a span:nth-child(3) {
     }
 }
 
-a span:nth-child(4) {
+.snake-border-a span:nth-child(4) {
     position: absolute;
     top: 0;
     left: 0;
