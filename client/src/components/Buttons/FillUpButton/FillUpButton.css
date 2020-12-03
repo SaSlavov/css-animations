@@ -1,0 +1,41 @@
+.fillUp-button-container {
+    position: absolute;
+    top: 60%;
+    left: 5%;
+    transform: translate(0, 0);
+    font-size: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #fff;
+    border: 2px solid #262626;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.fillUp-button-container:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: #ff003b;
+    transition: 0.5s ease-in-out;
+    z-index: -1;
+
+}
+
+.fillUp-button-container:hover:before {
+    left: 0;
+    z-index: -1;
+}
+.fillUp-button-container span {
+    color: #262626;
+    transition: 0.5s ease-in-out;
+    z-index: 1;
+}
+
+.fillUp-button-container:hover span {
+    color: #fff;
+}

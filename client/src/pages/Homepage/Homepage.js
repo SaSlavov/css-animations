@@ -14,6 +14,7 @@ import Flip3DButton from '../../components/Buttons/Flip3DButton/Flip3DButton';
 import NeonButton from '../../components/Buttons/NeonButton/NeonButton';
 import GlowingButton from '../../components/Buttons/GlowingButton/GlowingButton';
 import BorderShrinkButton from '../../components/Buttons/BorderShrinkButton/BorderShrinkButton';
+import FillUpButton from '../../components/Buttons/FillUpButton/FillUpButton';
 
 const Homepage = () => {
 
@@ -38,6 +39,7 @@ const Homepage = () => {
                 <NeonButton />
                 <GlowingButton />
                 <BorderShrinkButton />
+                <FillUpButton />
             </div>
         </div>
     );
