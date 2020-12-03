@@ -11,6 +11,7 @@ import GlowingForm from '../../components/Forms/GlowingForm/GlowingForm';
 import SnakeBorder from '../../components/Buttons/SnakeBorder/SnakeBorder';
 import LiquidButton from '../../components/Buttons/LiquidButton/LiquidButton';
 import Flip3DButton from '../../components/Buttons/Flip3DButton/Flip3DButton';
+import NeonButton from '../../components/Buttons/NeonButton/NeonButton';
 
 const Homepage = () => {
 
@@ -32,6 +33,7 @@ const Homepage = () => {
                 <SnakeBorder />
                 <LiquidButton />
                 <Flip3DButton />
+                <NeonButton />
             </div>
         </div>
     );
