@@ -1,0 +1,55 @@
+.border-shrink-container {
+    position: absolute;
+    top: 30%;
+    right: 5%;
+    padding: 15px 30px;
+    transform: translate(0, 0); /* otherwise the scale() messes with the z-index */
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+
+.border-shrink-container:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #03a9f4;
+    z-index: -1;
+    transition: transform 0.5s;
+    transform-origin: bottom right;
+    transform: scale(0)
+}
+
+.border-shrink-container:hover:before {
+    transition: transform 0.5s;
+    transform-origin: top left;
+    transform: scale(1);
+
+}
+
+.border-shrink-container:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:transparent;
+    border: 2px solid #fff;
+    z-index: -1;
+    box-sizing: border-box;
+    transition: transform 0.5s;
+    transform-origin: top left;
+    transform: scale(1)
+}
+
+.border-shrink-container:hover:after {
+    transition: transform 0.5s;
+    transform-origin: bottom right;
+    transform: scale(0)
+}

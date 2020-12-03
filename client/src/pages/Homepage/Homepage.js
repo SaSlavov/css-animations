@@ -13,6 +13,7 @@ import LiquidButton from '../../components/Buttons/LiquidButton/LiquidButton';
 import Flip3DButton from '../../components/Buttons/Flip3DButton/Flip3DButton';
 import NeonButton from '../../components/Buttons/NeonButton/NeonButton';
 import GlowingButton from '../../components/Buttons/GlowingButton/GlowingButton';
+import BorderShrinkButton from '../../components/Buttons/BorderShrinkButton/BorderShrinkButton';
 
 const Homepage = () => {
 
@@ -36,6 +37,7 @@ const Homepage = () => {
                 <Flip3DButton />
                 <NeonButton />
                 <GlowingButton />
+                <BorderShrinkButton />
             </div>
         </div>
     );
