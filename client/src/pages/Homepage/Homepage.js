@@ -12,6 +12,7 @@ import SnakeBorder from '../../components/Buttons/SnakeBorder/SnakeBorder';
 import LiquidButton from '../../components/Buttons/LiquidButton/LiquidButton';
 import Flip3DButton from '../../components/Buttons/Flip3DButton/Flip3DButton';
 import NeonButton from '../../components/Buttons/NeonButton/NeonButton';
+import GlowingButton from '../../components/Buttons/GlowingButton/GlowingButton';
 
 const Homepage = () => {
 
@@ -34,6 +35,7 @@ const Homepage = () => {
                 <LiquidButton />
                 <Flip3DButton />
                 <NeonButton />
+                <GlowingButton />
             </div>
         </div>
     );
