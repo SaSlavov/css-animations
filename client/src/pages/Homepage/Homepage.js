@@ -15,6 +15,7 @@ import NeonButton from '../../components/Buttons/NeonButton/NeonButton';
 import GlowingButton from '../../components/Buttons/GlowingButton/GlowingButton';
 import BorderShrinkButton from '../../components/Buttons/BorderShrinkButton/BorderShrinkButton';
 import FillUpButton from '../../components/Buttons/FillUpButton/FillUpButton';
+import HorizontalRotateButton from '../../components/Buttons/HorizontalRotateButton/HorizontalRotateButton';
 
 const Homepage = () => {
 
@@ -40,6 +41,7 @@ const Homepage = () => {
                 <GlowingButton />
                 <BorderShrinkButton />
                 <FillUpButton />
+                <HorizontalRotateButton />
             </div>
         </div>
     );
