@@ -1,12 +1,14 @@
 import React from 'react';
 import './LiquidButton.css'
 
-const LiquidButton = () => {
+const LiquidButton = ({name}) => {
     return (
-        <a className="liquid-button-a" href="#">
-            <span>Button</span>
-            <div className="liquid"></div>
-        </a>
+        <div className="liquid-button-container">
+            <a className="liquid-button-a" href="#">
+                <span>{name}</span>
+                <div className="liquid"></div>
+            </a>
+        </div>
     );
 };
 

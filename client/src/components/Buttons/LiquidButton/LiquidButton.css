@@ -1,20 +1,31 @@
+.liquid-button-container {
+    position: relative;
+    overflow: hidden;
+    height: 60px;
+    width: 200px;
+    display: flex;
+    justify-content: center
+}
+
 .liquid-button-a {
     position: absolute;
-    top: 5%;
-    left: 40%;
-    padding: 20px 50px;
     text-decoration: none;
     text-transform: uppercase;
-    width: 200px;
     overflow: hidden;
+    padding-top: 10px;
+    padding-left: 12px;
+    width: 200px;
+    height: 50px;
 }
 
 .liquid-button-a span {
     position: relative;
     z-index: 1;
     color: #fff;
+    padding: 0;
     font-size: 20px;
     letter-spacing:  8px;
+    
 }
 
 .liquid-button-a .liquid{

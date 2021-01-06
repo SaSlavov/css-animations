@@ -1,6 +1,6 @@
 .glowing-form-container {
     position: absolute;
-    top: 60%;
+    top: 70%;
     left: 5%;
     width: 450px;
     min-height: 300px;
@@ -28,10 +28,10 @@
     bottom: -5px;
     background: linear-gradient(45deg, #ff0047, #6eff00);
     pointer-events: none;
-    animation: animate 10s linear infinite;
+    animation: animateBackground 10s linear infinite;
 }
 
-@keyframes animate {
+@keyframes animateBackground {
     0% {
         filter: blur(60px) hue-rotate(0deg)
     }

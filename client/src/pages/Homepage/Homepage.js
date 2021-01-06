@@ -21,28 +21,7 @@ const Homepage = () => {
 
     return (
         <div id="home-container">
-            {/* <div className="cards">
-                <HeadphonesCard />
-                <StackedCards />
-                <RedWhiteCard />
-                <BlueWhiteCard />
-                <FlipCard3D />
-            </div> */}
-            {/* <div id="forms-container">
-                <FloatingInput />
-                <FoldedSignForm />
-                <GlowingForm />
-            </div> */}
-            <div>
-                <SnakeBorder />
-                <LiquidButton />
-                <Flip3DButton />
-                <NeonButton />
-                <GlowingButton />
-                <BorderShrinkButton />
-                <FillUpButton />
-                <HorizontalRotateButton />
-            </div>
+            
         </div>
     );
 };
